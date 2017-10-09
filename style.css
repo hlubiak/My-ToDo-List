@@ -1,0 +1,190 @@
+html, body{
+    paading:0;
+    margin:0;
+    width:100%;
+    height:100%;
+}
+*{
+    word-wrap: break-word;
+}
+a{
+    text-decoration:none;
+}
+
+.my_todolist_heading{
+    position:fixed;
+    width:100%;
+    height:55px;
+    background:#fff;
+    border-bottom:1px solid #CCC;
+    z-index:1;
+}
+
+.add_what_todo_btn{
+    position:absolute;
+    left:0;
+    width:150px;
+    height:55px;
+    background:none;
+    color:#069;
+    border:none;
+    font-weight:bold;
+}
+
+.todo_content_holder{
+    position:relative;
+    width:90%;
+    height:90%;
+    margin-left:5%;
+    margin-right:5%;
+    top:56px;
+}
+
+.separate_div{
+    margin:10px;
+}
+
+.todo_actions_div{
+    position:absolute;
+    width:200px;
+    float:left;
+    height:100%;
+}
+
+
+.right_red_todo_btn{
+    position:relative;
+    right:0;
+    background:red;
+    color:#fff;
+    font-weight:bold;
+    border:none;
+    height:30px;
+    border-radius:6px;
+    font-size:12px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+}
+
+.todo_list_div{
+    position:relative;
+    width:82%;
+    height:65px;
+    left:202px;
+    top:10px;
+    text-align:left;
+    padding-left:50px;
+    border:none;
+    border-bottom:1px solid #fff;
+}
+
+.mark_todo_div{
+    position:absolute;
+    width:20px;
+    height:100%;
+    left:0;
+}
+
+.checkbox{
+    position:absolute;
+    width:20px;;
+    height:20px;
+    top:20%;
+    margin-top:-10px;
+}
+
+.what_todo_input_div{
+    position:fixed;
+    width:400px;
+    height:auto;
+    float:left;
+    left:50%;
+    margin-left:-200px;
+    background:#FFF;
+    padding:10px;
+    border:1px solid #CCC;
+    z-index:1;
+    top:20px;
+}
+
+.text_input{
+    width:95%;
+    height:200px;
+    margin:10px;
+    border:none;
+}
+
+.submit_btn{
+    position:relative;
+    width:100px;
+    left:70%;
+    height:45px;
+    background:red;
+    border:none;
+    margin:10px;
+    color:#fff;
+}
+
+.round_border{
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
+}
+
+.linen{
+    background:linen;
+}
+.blue{
+    background:lightblue;
+}
+
+.done_btn{
+    position:absolute;
+    height:35px;
+    width:95px;
+    right:0;
+    border:none;
+    background:lightgrey;
+    top:0px;
+    font-size:13px;
+    border:1px solid #fff;
+}
+
+#loading{
+    position:fixed;
+    width:80px;
+    height:35px;
+    z-index:2;
+    left:50%;
+    margin-left:-30px;
+    background:#069;
+    color:#fff;
+    border:none;
+    display:none;
+}
+
+@media screen and (max-width: 600px) {
+    .todo_actions_div {
+        position:relative;
+        width:100%;
+        height:auto;
+    }
+    
+    .todo_list_div{
+        left:0;
+        width:100%;
+        height:65px;
+    }
+    
+    .what_todo_input_div{
+        width:85%;
+        height:50%;
+        left:50%;
+        margin-left:-45%;
+        top:45%;
+    }
+    
+    .submit_btn{
+        left:65%;
+    }
+}
